@@ -1,0 +1,6 @@
+spriteTypes = {
+	SpriteType = {  
+		name = "GFX_clutch"
+		texturefile = "gfx/interface/technologies/Uglies/TIE_clutch.dds"
+	}
+}
