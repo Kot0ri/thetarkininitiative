@@ -102,6 +102,11 @@ guiTypes = {
             position = {x=51 y=187}
             spriteType = "GFX_corporate_levels"
         }
+        buttonType = {
+            name = "order_ship" 
+            position = { x = 356 y =  609 }
+            spriteType = "GFX_ship_market_big_buy_button"
+        }
         #iconType = {
         #    name = "bought_cover"
         #    position = {x=72 y=432}
@@ -118,6 +123,17 @@ guiTypes = {
             position = { x = 414 y =  481 }
             spriteType = "GFX_market_overlay"
             pdx_tooltip = "producer_buy_tt"
+        }
+        instantTextBoxType = {
+            name = "amount_in_queue_in_front"
+            position = {x = 316 y = 450}
+            font = "russo_one16"
+			borderSize = {x = 0 y = 0}
+			text = "ship_amount_in_queue_in_front_gui_holder"
+			maxWidth = 300
+			maxHeight = 30
+			format = center
+            pdx_tooltip = "ship_amount_in_queue_tt"
         }
     }
     #buttonType = {
@@ -202,7 +218,7 @@ guiTypes = {
         buttonType = {
             name = "ship_icon" 
             position = { x = 123 y = -235 }
-            spriteType = "GFX_question_mark_market"
+            spriteType = "GFX_question_air"
         }
         buttonType = {
             name = "level_1" 
@@ -273,28 +289,12 @@ guiTypes = {
             spriteType = "GFX_market_overlay"
             pdx_tooltip = "producer_buy_tt"
         }
-        buttonType = {
-            name = "order_ship" 
-            position = { x = 356 y =  609 }
-            spriteType = "GFX_ship_market_big_buy_button"
-        }
         instantTextBoxType = {
             name = "amount_in_queue"
             position = {x = 316 y = 561}
             font = "russo_one16"
 			borderSize = {x = 0 y = 0}
-			text = "ship_amount_in_queue"
-			maxWidth = 300
-			maxHeight = 30
-			format = center
-            pdx_tooltip = "ship_amount_in_queue_tt"
-        }
-        instantTextBoxType = {
-            name = "amount_in_queue_in_front"
-            position = {x = 316 y = 561}
-            font = "russo_one16"
-			borderSize = {x = 0 y = 0}
-			text = "ship_amount_in_queue_in_front"
+			text = "ship_amount_in_queue_gui_holder"
 			maxWidth = 300
 			maxHeight = 30
 			format = center
@@ -375,12 +375,12 @@ guiTypes = {
         buttonType = {
             name = "CR70" 
             position = { x = 343 y = -304 }
-            spriteType = "GFX_cr_70_medium"
+            spriteType = "GFX_CR70_1_medium"
         }
         buttonType = {
             name = "CR90" 
             position = { x = 343 y = -234 }
-            spriteType = "GFX_cr_80_medium"
+            spriteType = "GFX_cr70_2_medium"
         }
         buttonType = {
             name = "warrior" 
