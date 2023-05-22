@@ -21,6 +21,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+	news_event = RIN.13
 	add_war_support = -.20
 	}
 }
@@ -35,6 +36,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		news_event = RIN.14
 	add_stability = .20
 	}
 	relative_position_id = RIN_emperors_death
@@ -759,10 +761,13 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-		diplomatic_relation = {
-			country = ERI
-			relation = non_aggression_pact
-			active = yes
+		if = {
+			limit = {
+				NOT = {
+					has_war_with = RIN
+				}
+			}
+			ERI = { country_event = RIN.11 }
 		}
 	}
 	relative_position_id = RIN_fortress_world
@@ -875,8 +880,9 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-		add_resistance = -20
-		add_compliance = 10
+		###what state?
+		#add_resistance = -20
+		#add_compliance = 10
 	}
 	relative_position_id = RIN_resume_mining_operations
 	prerequisite = { focus = RIN_resume_mining_operations }
@@ -1131,15 +1137,14 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
-		diplomatic_relation = {
-			country = ERI
-			relation = non_aggression_pact
-			active = yes
+		if = {
+			limit = {
+				NOT = {
+					has_war_with = RIN
+				}
+			}
+			ERI = { country_event = RIN.16 }
 		}
-		set_rule = {
-			can_create_factions = yes
-		}
-		create_faction = new_empire
 	}
 	relative_position_id = RIN_dealing_with_eriadu
 	prerequisite = { focus = RIN_dealing_with_eriadu }
@@ -1213,6 +1218,7 @@ focus = {
 		factor = 1
 	}
 	completion_reward = {
+		news_event = RIN.15
 		#increase imperiarl legitamancy
 		custom_effect_tooltip = tt_rin_increase_15_legitimacy
 			add_to_variable = { legitimacy_emp = 15 }
@@ -1304,10 +1310,10 @@ focus = {
 				transfer_troops = yes
 			}
 		}
-		annex_country = {
-			target = GER
-			transfer_troops = yes
-		}
+		# annex_country = {
+			# target = GER ###GER does not exist
+			# transfer_troops = yes
+		# }
 		384 = {add_compliance = 20}
 		392 = {add_compliance = 20}
 		388 = {add_compliance = 20}
@@ -1349,8 +1355,9 @@ focus = {
 	}
 
 	completion_reward = {
-		add_resistance = -20
-		add_compliance = 10
+		###what state?
+		#add_resistance = -20
+		#add_compliance = 10
 	}
 	relative_position_id = RIN_invasion_of_falleen
 	prerequisite = { focus = RIN_imperial_occupation}

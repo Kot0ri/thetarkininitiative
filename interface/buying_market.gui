@@ -102,11 +102,6 @@ guiTypes = {
             position = {x=51 y=187}
             spriteType = "GFX_corporate_levels"
         }
-        buttonType = {
-            name = "order_ship" 
-            position = { x = 356 y =  609 }
-            spriteType = "GFX_ship_market_big_buy_button"
-        }
         #iconType = {
         #    name = "bought_cover"
         #    position = {x=72 y=432}
@@ -124,14 +119,508 @@ guiTypes = {
             spriteType = "GFX_market_overlay"
             pdx_tooltip = "producer_buy_tt"
         }
+        instantTextboxType = {
+			name = "price_of_batch"
+            position = { x = 92 y = 475 }
+			font = "russo_one16"
+			borderSize = {x = 0 y = 0}
+			text = "price_of_batch_handler"
+			maxWidth = 240
+			maxHeight = 30
+			format = center
+		}
+        instantTextboxType = {
+			name = "amount_to_be_produced"
+            position = { x = 86 y = 653 }
+			font = "russo_one36"
+			Size = {x = 0 y = 0}
+			text = "ship_amount_selected"
+			maxWidth = 240
+			maxHeight = 30
+			format = center
+		}
+        buttonType = {
+            name = "left_click_market" 
+            position = { x = 107 y =  646 }
+            spriteType = "GFX_left_market"
+        }
+        buttonType = {
+            name = "right_click_market" 
+            position = { x = 263 y = 646 }
+            spriteType = "GFX_right_market"
+        }
+        instantTextboxType = {
+			name = "IC_cost"
+            position = { x = 316 y = 587 }
+			font = "russo_one16"
+			borderSize = {x = 0 y = 0}
+			text = "ship_ic_cost"
+			maxWidth = 300
+			maxHeight = 30
+			format = center
+            pdx_tooltip = "ship_ic_cost_tt"
+		}
     }
-    #buttonType = {
-    #    name = "ship_back_icon" 
-    #    position = {x=6 y=11}	
-    #    spriteType = "GFX_grid_back_market"
-    #}
+    containerWindowType = {
+        name = "Marketplace_buying_land_main"
+        position = { x = 0 y = 0 } #990
+        size = { width=946 height=982 }
+        instantTextBoxType = {
+            name = "amount_in_queue"
+            position = {x = 316 y = 561}
+            font = "russo_one16"
+            borderSize = {x = 0 y = 0}
+            text = "land_amount_in_queue_gui_holder"
+            maxWidth = 300
+            maxHeight = 30
+            format = center
+            pdx_tooltip = "ship_amount_in_queue_tt"
+        }
+        instantTextBoxType = {
+            name = "amount_in_queue_in_front"
+            position = {x = 316 y = 561}
+            font = "russo_one16"
+            borderSize = {x = 0 y = 0}
+            text = "land_amount_in_queue_in_front_gui_holder"
+            maxWidth = 300
+            maxHeight = 30
+            format = center
+            pdx_tooltip = "ship_amount_in_queue_tt"
+        }
+        buttonType = {
+            name = "order_starship" 
+            position = { x = 356 y =  609 }
+            spriteType = "GFX_ship_market_big_buy_button"
+        }
+        buttonType = {
+            name = "gun_button" 
+            position = { x = 70 y = 87 }
+            spriteType = "GFX_gun_buy"
+        }
+        buttonType = {
+            name = "tank_button" 
+            position = { x = 251 y = 87 }
+            spriteType = "GFX_tank_buy"
+        }
+        buttonType = {
+            name = "level_1" 
+            position = { x = 68 y = 200 }
+            spriteType = "GFX_level_button"
+			buttonText = "level_1"
+			buttonFont = "russo_one16"
+        }
+        buttonType = {
+            name = "level_2" 
+            position = { x = 68 y = 253 }
+            spriteType = "GFX_level_button"
+            buttonText = "level_2"
+			buttonFont = "russo_one16"
+        }
+        buttonType = {
+            name = "level_3" 
+            position = { x = 68 y = 306 }
+            spriteType = "GFX_level_button"
+            buttonText = "level_3"
+			buttonFont = "russo_one16"
+        }
+        buttonType = {
+            name = "level_4" 
+            position = { x = 68 y = 359 }
+            spriteType = "GFX_level_button"
+            buttonText = "level_4"
+			buttonFont = "russo_one16"
+        }
+    }
+    containerWindowType = {
+        name = "Marketplace_buying_land_emp_main"
+        position = { x = 202 y = 514 } #990
+        size = { width=946 height=982 }
+    
+        buttonType = {
+            name = "starfighter_1" 
+            position = { x = 384 y = -310 }
+            spriteType = "GFX_grid_back_market"
+        }
+        buttonType = {
+            name = "starfighter_2" 
+            position = { x = 384 y = -240 }
+            spriteType = "GFX_grid_back_market"
+        }
+        buttonType = {
+            name = "starfighter_3" 
+            position = { x = 384 y = -170 }
+            spriteType = "GFX_grid_back_market"
+        }
+        buttonType = {
+            name = "starfighter_4" 
+            position = { x = 384 y = -100 }
+            spriteType = "GFX_grid_back_market"
+        }
+        buttonType = {
+            name = "starfighter_5" 
+            position = { x = 384 y = -30 }
+            spriteType = "GFX_grid_back_market"
+        }
+        buttonType = {
+            name = "starfighter_6" 
+            position = { x = 384 y = 40 }
+            spriteType = "GFX_grid_back_market"
+        }
+        buttonType = {
+            name = "starfighter_7" 
+            position = { x = 384 y = 110 }
+            spriteType = "GFX_grid_back_market"
+        }
+        buttonType = {
+            name = "e_11" 
+            position = { x = 396 y = -308 }
+            spriteType = "GFX_DH_17_blaster_medium"
+        }
+        buttonType = {
+            name = "ee_4" 
+            position = { x = 396 y = -236 }
+            spriteType = "GFX_ee_4_medium"
+        }
+        buttonType = {
+            name = "smart_rocket" 
+            position = { x = 400 y = -165 }
+            spriteType = "GFX_smart_rocket_medium"
+            scale = 0.9
+        }
+        buttonType = {
+            name = "k79_s80" 
+            position = { x = 410 y = -100 }
+            spriteType = "GFX_k79_medium"
+            scale = 0.9
+        }
+        buttonType = {
+            name = "spha" 
+            position = { x = 410 y = -30 }
+            spriteType = "GFX_SPHA_medium"
+            scale = 0.9
+        }
+        buttonType = {
+            name = "atdp" 
+            position = { x = 407 y = -308 }
+            spriteType = "GFX_at_dp_medium"
+            scale = 0.9
+        }
+        buttonType = {
+            name = "atst" 
+            position = { x = 407 y = -239 }
+            spriteType = "GFX_at_st_medium"
+            scale = 0.9
+        }
+        buttonType = {
+            name = "juggernaut" 
+            position = { x = 407 y = -166 }
+            spriteType = "GFX_juggernaut_medium"
+            scale = 0.9
+        }
+        buttonType = {
+            name = "tie_crawler" 
+            position = { x = 407 y = -98 }
+            spriteType = "GFX_tie_crawler_medium"
+            scale = 0.9
+        }
+        buttonType = {
+            name = "ataa" 
+            position = { x = 407 y = -29 }
+            spriteType = "GFX_at_aa_medium"
+            scale = 0.9
+        }
+        buttonType = {
+            name = "tx130t" 
+            position = { x = 407 y = 40 }
+            spriteType = "GFX_tx_130T_medium"
+            scale = 0.9
+        }
+        buttonType = {
+            name = "atat" 
+            position = { x = 407 y = 111 }
+            spriteType = "GFX_at_at_medium"
+            scale = 0.9
+        }
+        buttonType = {
+            name = "supply_equipment_merr" 
+            position = { x = 415 y = 46 }
+            spriteType = "GFX_tech_support_medium"
+        }
+        buttonType = {
+            name = "stormtrooper_equip" 
+            position = { x = 425 y = 120 }
+            spriteType = "GFX_stormtrooper_medium"
+        }
+        buttonType = {
+            name = "land_emp_icon_gun" 
+            position = { x = 90 y = -235 }
+            spriteType = "GFX_question_air"
+        }
+        buttonType = {
+            name = "land_emp_icon_tank" 
+            position = { x = 90 y = -235 }
+            spriteType = "GFX_question_air"
+        }
+    }
+    containerWindowType = {
+        name = "Marketplace_buying_land_reb_main"
+        position = { x = 202 y = 514 } #990
+        size = { width=946 height=982 }
+    
+        buttonType = {
+            name = "starfighter_1" 
+            position = { x = 384 y = -310 }
+            spriteType = "GFX_grid_back_market"
+        }
+        buttonType = {
+            name = "starfighter_2" 
+            position = { x = 384 y = -240 }
+            spriteType = "GFX_grid_back_market"
+        }
+        buttonType = {
+            name = "starfighter_3" 
+            position = { x = 384 y = -170 }
+            spriteType = "GFX_grid_back_market"
+        }
+        buttonType = {
+            name = "starfighter_4" 
+            position = { x = 384 y = -100 }
+            spriteType = "GFX_grid_back_market"
+        }
+        buttonType = {
+            name = "starfighter_5" 
+            position = { x = 384 y = -30 }
+            spriteType = "GFX_grid_back_market"
+        }
+        buttonType = {
+            name = "starfighter_6" 
+            position = { x = 384 y = 40 }
+            spriteType = "GFX_grid_back_market"
+        }
+        buttonType = {
+            name = "starfighter_7" 
+            position = { x = 384 y = 110 }
+            spriteType = "GFX_grid_back_market"
+        }
+        buttonType = {
+            name = "a280c" 
+            position = { x = 396 y = -308 }
+            spriteType = "GFX_A280_blaster_medium"
+        }
+        buttonType = {
+            name = "a_dh_17" 
+            position = { x = 396 y = -236 }
+            spriteType = "GFX_DH_17_blaster_medium"
+        }
+        buttonType = {
+            name = "hh_12" 
+            position = { x = 400 y = -165 }
+            spriteType = "GFX_HH_12_medium"
+            scale = 0.9
+        }
+        buttonType = {
+            name = "t1_s" 
+            position = { x = 410 y = -100 }
+            spriteType = "GFX_k79_medium"
+            scale = 0.9
+        }
+        buttonType = {
+            name = "t1_b" 
+            position = { x = 407 y = 111 }
+            spriteType = "GFX_t1_b_medium"
+            scale = 0.9
+        }
+        buttonType = {
+            name = "mptl_2" 
+            position = { x = 410 y = -30 }
+            spriteType = "GFX_MPTL_2a_medium"
+            scale = 0.9
+        }
+        buttonType = {
+            name = "cze_support" 
+            position = { x = 415 y = 46 }
+            spriteType = "GFX_tech_support_medium"
+            scale = 0.9
+        }
+        buttonType = {
+            name = "t3_b" 
+            position = { x = 407 y = -308 }
+            spriteType = "GFX_t3_b_medium"
+            scale = 0.9
+        }
+        buttonType = {
+            name = "t4_b" 
+            position = { x = 407 y = -239 }
+            spriteType = "GFX_t4_b_medium"
+            scale = 0.9
+        }
+        buttonType = {
+            name = "t1_c" 
+            position = { x = 407 y = -166 }
+            spriteType = "GFX_t1_c_medium"
+            scale = 0.9
+        }
+        buttonType = {
+            name = "aac_speeder" 
+            position = { x = 407 y = -98 }
+            spriteType = "GFX_AAC_1_speeder_tank"
+            scale = 0.9
+        }
+        buttonType = {
+            name = "combat_speeder" 
+            position = { x = 407 y = -29 }
+            spriteType = "GFX_combat_speeder_medium"
+            scale = 0.9
+        }
+        buttonType = {
+            name = "flash_speeder" 
+            position = { x = 407 y = 40 }
+            spriteType = "GFX_flash_speeder_medium"
+            scale = 0.9
+        }
+    }
     containerWindowType = {
         name = "Marketplace_buying_starfighters"
+        position = { x = 0 y = 0 } #990
+        size = { width=946 height=982 }
+        buttonType = {
+            name = "order_starship" 
+            position = { x = 356 y =  609 }
+            spriteType = "GFX_ship_market_big_buy_button"
+        }
+        instantTextBoxType = {
+            name = "amount_in_queue"
+            position = {x = 316 y = 561}
+            font = "russo_one16"
+            borderSize = {x = 0 y = 0}
+            text = "starfighter_amount_in_queue_gui_holder"
+            maxWidth = 300
+            maxHeight = 30
+            format = center
+            pdx_tooltip = "ship_amount_in_queue_tt"
+        }
+        instantTextBoxType = {
+            name = "amount_in_queue_in_front"
+            position = {x = 316 y = 561}
+            font = "russo_one16"
+            borderSize = {x = 0 y = 0}
+            text = "starfighter_amount_in_queue_in_front_gui_holder"
+            maxWidth = 300
+            maxHeight = 30
+            format = center
+            pdx_tooltip = "ship_amount_in_queue_tt"
+        }
+        buttonType = {
+            name = "level_1" 
+            position = { x = 68 y = 200 }
+            spriteType = "GFX_level_button"
+			buttonText = "level_1"
+			buttonFont = "russo_one16"
+        }
+        buttonType = {
+            name = "level_2" 
+            position = { x = 68 y = 253 }
+            spriteType = "GFX_level_button"
+            buttonText = "level_2"
+			buttonFont = "russo_one16"
+        }
+        buttonType = {
+            name = "level_3" 
+            position = { x = 68 y = 306 }
+            spriteType = "GFX_level_button"
+            buttonText = "level_3"
+			buttonFont = "russo_one16"
+        }
+        buttonType = {
+            name = "level_4" 
+            position = { x = 68 y = 359 }
+            spriteType = "GFX_level_button"
+            buttonText = "level_4"
+			buttonFont = "russo_one16"
+        }
+    }
+    containerWindowType = {
+        name = "Marketplace_buying_emp_starfighters"
+        position = { x = 202 y = 514 } #990
+        size = { width=946 height=982 }
+        buttonType = {
+            name = "starfighter_1" 
+            position = { x = 384 y = -310 }
+            spriteType = "GFX_grid_back_market"
+        }
+        buttonType = {
+            name = "starfighter_2" 
+            position = { x = 384 y = -240 }
+            spriteType = "GFX_grid_back_market"
+        }
+        buttonType = {
+            name = "starfighter_3" 
+            position = { x = 384 y = -170 }
+            spriteType = "GFX_grid_back_market"
+        }
+        buttonType = {
+            name = "starfighter_4" 
+            position = { x = 384 y = -100 }
+            spriteType = "GFX_grid_back_market"
+        }
+        buttonType = {
+            name = "starfighter_5" 
+            position = { x = 384 y = -30 }
+            spriteType = "GFX_grid_back_market"
+        }
+        buttonType = {
+            name = "starfighter_6" 
+            position = { x = 384 y = 40 }
+            spriteType = "GFX_grid_back_market"
+        }
+        buttonType = {
+            name = "starfighter_7" 
+            position = { x = 384 y = 110 }
+            spriteType = "GFX_grid_back_market"
+        }
+        buttonType = {
+            name = "tie_fighters" 
+            position = { x = 436 y = -298 }
+            spriteType = "GFX_tie_fighter_medium"
+        }
+        buttonType = {
+            name = "tie_bomber" 
+            position = { x = 436 y = -232 }
+            spriteType = "GFX_tie_bomber_medium"
+        }
+        buttonType = {
+            name = "tie_interceptor" 
+            position = { x = 436 y = -160 }
+            spriteType = "GFX_tie_interceptor_medium"
+        }
+        buttonType = {
+            name = "tie_defender" 
+            position = { x = 436 y = -90 }
+            spriteType = "GFX_tie_defender_medium"
+        }
+        buttonType = {
+            name = "tie_fighter_bomber" 
+            position = { x = 436 y = -20 }
+            spriteType = "GFX_tie_advanced_medium"
+        }
+        buttonType = {
+            name = "tie_phantom" 
+            position = { x = 436 y = 46 }
+            spriteType = "GFX_tie_phantom_medium"
+        }
+        buttonType = {
+            name = "tie_automated" 
+            position = { x = 436 y = 116 }
+            spriteType = "GFX_tie_automated_1_medium"
+        }
+        buttonType = {
+            name = "ship_icon" 
+            position = { x = 123 y = -235 }
+            spriteType = "GFX_question_air"
+        }
+    }
+    containerWindowType = {
+        name = "Marketplace_buying_reb_starfighters"
         position = { x = 202 y = 514 } #990
         size = { width=946 height=982 }
         buttonType = {
@@ -209,27 +698,6 @@ guiTypes = {
             position = { x = 123 y = -235 }
             spriteType = "GFX_question_air"
         }
-        buttonType = {
-            name = "level_1" 
-            position = { x = -134 y = -315 }
-            spriteType = "GFX_level_button"
-			buttonText = "level_1"
-			buttonFont = "russo_one16"
-        }
-        buttonType = {
-            name = "level_2" 
-            position = { x = -134 y = -261 }
-            spriteType = "GFX_level_button"
-            buttonText = "level_2"
-			buttonFont = "russo_one16"
-        }
-        buttonType = {
-            name = "level_3" 
-            position = { x = -134 y = -207 }
-            spriteType = "GFX_level_button"
-            buttonText = "level_3"
-			buttonFont = "russo_one16"
-        }
         #buttonType = {
         #    name = "level_4" 
         #    position = { x = -134 y = -153 }
@@ -242,6 +710,34 @@ guiTypes = {
         name = "Marketplace_buying_ships"
         position = { x = 0 y = 0 } #990
         size = { width=946 height=982 }
+        borderSize = {x = 0 y = 0}
+        instantTextBoxType = {
+            name = "amount_in_queue"
+            position = {x = 316 y = 561}
+            font = "russo_one16"
+            borderSize = {x = 0 y = 0}
+            text = "ship_amount_in_queue_gui_holder"
+            maxWidth = 300
+            maxHeight = 30
+            format = center
+            pdx_tooltip = "ship_amount_in_queue_tt"
+        }
+        instantTextBoxType = {
+            name = "amount_in_queue_in_front"
+            position = {x = 316 y = 561}
+            font = "russo_one16"
+            borderSize = {x = 0 y = 0}
+            text = "ship_amount_in_queue_in_front_gui_holder"
+            maxWidth = 300
+            maxHeight = 30
+            format = center
+            pdx_tooltip = "ship_amount_in_queue_tt"
+        }
+        buttonType = {
+            name = "order_ship" 
+            position = { x = 356 y =  609 }
+            spriteType = "GFX_ship_market_big_buy_button"
+        }
         buttonType = {
            name = "select_corvettes_button" 
            position = { x = 71 y =  90 }
@@ -278,39 +774,6 @@ guiTypes = {
             spriteType = "GFX_market_overlay"
             pdx_tooltip = "producer_buy_tt"
         }
-        instantTextBoxType = {
-            name = "amount_in_queue"
-            position = {x = 316 y = 561}
-            font = "russo_one16"
-			borderSize = {x = 0 y = 0}
-			text = "ship_amount_in_queue_gui_holder"
-			maxWidth = 300
-			maxHeight = 30
-			format = center
-            pdx_tooltip = "ship_amount_in_queue_tt"
-        }
-        instantTextBoxType = {
-            name = "amount_in_queue_in_front"
-            position = {x = 316 y = 561}
-            font = "russo_one16"
-			borderSize = {x = 0 y = 0}
-			text = "ship_amount_in_queue_in_front_gui_holder"
-			maxWidth = 300
-			maxHeight = 30
-			format = center
-            pdx_tooltip = "ship_amount_in_queue_tt"
-        }
-        instantTextboxType = {
-			name = "IC_cost"
-            position = { x = 316 y = 587 }
-			font = "russo_one16"
-			borderSize = {x = 0 y = 0}
-			text = "ship_ic_cost"
-			maxWidth = 300
-			maxHeight = 30
-			format = center
-            pdx_tooltip = "ship_ic_cost_tt"
-		}
        #instantTextboxType = {
 		#	name = "price"
        #    position = { x = 92 y = 475 }
@@ -321,36 +784,6 @@ guiTypes = {
 		#	maxHeight = 30
 		#	format = center
 		#}
-        instantTextboxType = {
-			name = "price_of_batch"
-            position = { x = 92 y = 475 }
-			font = "russo_one16"
-			borderSize = {x = 0 y = 0}
-			text = "price_of_batch_handler"
-			maxWidth = 240
-			maxHeight = 30
-			format = center
-		}
-        instantTextboxType = {
-			name = "amount_to_be_produced"
-            position = { x = 86 y = 653 }
-			font = "russo_one36"
-			borderSize = {x = 0 y = 0}
-			text = "ship_amount_selected"
-			maxWidth = 240
-			maxHeight = 30
-			format = center
-		}
-        buttonType = {
-            name = "left_click_market" 
-            position = { x = 107 y =  646 }
-            spriteType = "GFX_left_market"
-        }
-        buttonType = {
-            name = "right_click_market" 
-            position = { x = 263 y = 646 }
-            spriteType = "GFX_right_market"
-        }
     }
     containerWindowType = {
         name = "Marketplace_corvettes_rebel_buttons"
@@ -555,67 +988,6 @@ guiTypes = {
 			format = center
 		}
     }
-    # containerWindowType = {
-    #     name = "Marketplace_cruiser_imperial_buttons"
-    #     position = { x = 202 y = 514 } #990
-    #     size = { width=946 height=982 }
-
-    #     buttonType = {
-    #         name = "corvette_1" 
-    #         position = { x = 384 y = -310 }
-    #         spriteType = "GFX_grid_back_market"
-    #     }
-    #     buttonType = {
-    #         name = "corvette_2" 
-    #         position = { x = 384 y = -240 }
-    #         spriteType = "GFX_grid_back_market"
-    #     }
-    #     buttonType = {
-    #         name = "corvette_3" 
-    #         position = { x = 384 y = -170 }
-    #         spriteType = "GFX_grid_back_market"
-    #     }
-    #     buttonType = {
-    #         name = "corvette_4" 
-    #         position = { x = 384 y = -100 }
-    #         spriteType = "GFX_grid_back_market"
-    #     }
-    #     buttonType = {
-    #         name = "ipv" 
-    #         position = { x = 343 y = -304 }
-    #         spriteType = "GFX_ipv_1_medium"
-    #     }
-    #     buttonType = {
-    #         name = "gozanti" 
-    #         position = { x = 343 y = -234 }
-    #         spriteType = "GFX_gozanti_medium"
-    #     }
-    #     buttonType = {
-    #         name = "raider" 
-    #         position = { x = 343 y = -164 }
-    #         spriteType = "GFX_raider_1_medium"
-    #     }
-    #     buttonType = {
-    #         name = "raider_2" 
-    #         position = { x = 343 y = -94 }
-    #         spriteType = "GFX_raider_2_medium"
-    #     }
-    #     buttonType = {
-    #         name = "ship_icon" 
-    #         position = { x = -130 y = -325 }
-    #         spriteType = "GFX_question_mark_market"
-    #     }
-    #     instantTextboxType = {
-	# 		name = "title_battlecruiser_emp"
-    #         position = { x = 8 y = -73 }
-	# 		font = "russo_one16"
-	# 		borderSize = {x = 0 y = 0}
-	# 		text = "ship_cruiser_emp_title_market"
-	# 		maxWidth = 500
-	# 		maxHeight = 30
-	# 		format = center
-	# 	}
-    # }
     containerWindowType = {
         name = "Marketplace_battlecruiser_rebel_buttons"
         position = { x = 202 y = 514 } #990

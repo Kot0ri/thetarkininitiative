@@ -8,6 +8,7 @@ recruit_character = NAG_gharn_kazaki
 set_technology = {
 	militia_nag = 1
 	infantry_weapons = 1
+	tech_support = 1
 	gw_artillery = 1
 	post_endor_survival = 1
 	mining_droids = 1
@@ -35,3 +36,7 @@ set_politics = {
 	elections_allowed = no
 }
 
+declare_war_on = {
+	target = KYK
+	type = annex_everything
+}
