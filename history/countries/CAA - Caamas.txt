@@ -1,6 +1,8 @@
 ﻿capital = 253
 
-oob = "CAM_4"
+oob = "CAA_4"
+
+recruit_character = CAA_seras
 
 # Starting tech
 set_technology = {
